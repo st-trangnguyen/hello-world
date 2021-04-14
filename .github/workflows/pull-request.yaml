@@ -6,4 +6,7 @@ jobs:
   testTSLint:
     runs-on: ubuntu-latest
     steps:
-      - run: ng lint
+      - name: Initial dependencies
+        run: npm install
+      - name: Lint code
+        run: ng lint
