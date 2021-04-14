@@ -4,6 +4,6 @@ on: [push, pull_request]
 
 jobs:
   testTSLint:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - run: ng lint
