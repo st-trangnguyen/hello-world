@@ -6,6 +6,10 @@ jobs:
   testTSLint:
     runs-on: ubuntu-latest
     steps:
+      - name: Prepare nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: '13.x'
       - name: Initial Angular CLI
         run: npm install @angular/cli
       - name: Initial dependencies
