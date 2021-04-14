@@ -6,6 +6,8 @@ jobs:
   testTSLint:
     runs-on: ubuntu-latest
     steps:
+      - name: Initial Angular CLI
+        run: npm install -g @angular/cli
       - name: Initial dependencies
         run: npm install
       - name: Lint code
